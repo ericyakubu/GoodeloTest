@@ -1,0 +1,59 @@
+@import "../../styles/mixins.scss";
+
+.Satisfaction {
+  width: 713px;
+  height: 493px;
+  @include border;
+  padding: 63px 60px 67px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #7affa7;
+  max-width: 40vw;
+
+  h3 {
+    font-weight: 500;
+    font-size: 89px;
+    line-height: 100%;
+    letter-spacing: -0.06em;
+    color: #000;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 100%;
+    color: #000;
+  }
+
+  @media (max-width: 1480px) {
+    padding: 50px;
+
+    h3 {
+      font-size: 65px;
+    }
+
+    p {
+      font-size: 30px;
+    }
+  }
+
+  @media (max-width: 1080px) {
+    min-width: 100%;
+    height: fit-content;
+
+    h3 {
+      margin-bottom: 50px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h3 {
+      font-size: 45px;
+    }
+  }
+
+  &__error {
+    background: #ff8a7a;
+  }
+}

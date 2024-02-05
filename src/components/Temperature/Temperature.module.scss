@@ -1,0 +1,71 @@
+@import "../../styles/mixins.scss";
+
+.Temperature {
+  @include border;
+  width: 1088px;
+  height: 920px;
+  border: 1px solid #000;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0) 0%,
+    hsla(140, 100%, 50%, 0.6) 100%
+  );
+  max-height: calc(100vh - 80px);
+
+  display: flex;
+  flex-direction: column;
+  gap: 68px;
+  padding: 70px 100px;
+  max-width: 55vw;
+
+  @media (max-width: 1480px) {
+    padding: 50px;
+  }
+
+  @media (max-width: 1080px) {
+    min-width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5vh;
+    height: fit-content;
+  }
+
+  h3,
+  span {
+    line-height: 100%;
+    letter-spacing: -0.06em;
+    color: #000;
+  }
+
+  h3 {
+    margin-bottom: 19px;
+    font-weight: 400;
+    font-size: 200px;
+
+    @media (max-width: 1480px) {
+      font-size: 155px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 90px;
+    }
+  }
+
+  span {
+    font-weight: 700;
+    font-size: 40px;
+
+    @media (max-width: 480px) {
+      font-size: 30px;
+    }
+  }
+
+  &__error {
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 138, 122, 0.6) 100%
+    );
+  }
+}

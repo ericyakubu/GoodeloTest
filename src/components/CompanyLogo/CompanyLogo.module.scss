@@ -1,0 +1,21 @@
+@import "../../styles/mixins.scss";
+
+.Company {
+  border: 1px solid #000;
+  width: 336px;
+  height: 383px;
+  @include border;
+  position: relative;
+  overflow: hidden;
+  max-width: 19.5vw;
+
+  @media (max-width: 1080px) {
+    min-width: 100%;
+  }
+
+  img {
+    position: absolute;
+    right: -1%;
+    bottom: -1%;
+  }
+}

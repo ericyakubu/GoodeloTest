@@ -1,0 +1,49 @@
+$gap: 1vw;
+
+.Landing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  padding: 40px;
+  gap: $gap;
+  overflow-x: hidden;
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+    height: calc(100vh - 80px);
+    justify-content: space-between;
+    max-width: 40vw;
+
+    &__row {
+      display: flex;
+      gap: $gap;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1080px) {
+    height: auto;
+    min-height: none;
+    padding: 20px;
+    padding-bottom: 50px;
+    flex-direction: column-reverse;
+    overflow-y: scroll;
+
+    &__col {
+      width: 100%;
+      max-width: 100%;
+      height: fit-content;
+      &__row {
+        display: flex;
+        flex-direction: column;
+        gap: $gap;
+        width: 100%;
+      }
+    }
+  }
+}
