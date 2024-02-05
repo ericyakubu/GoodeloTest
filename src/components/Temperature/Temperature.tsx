@@ -18,13 +18,13 @@ const Temperature: FunctionComponent = () => {
     >
       <div>
         <h3>{tempNum} °C</h3>
-        <span>Температура</span>
+        <p>Температура</p>
       </div>
       <div>
         <h3>
-          {co2Num} <p>ppm</p>
+          {co2Num} <span>ppm</span>
         </h3>
-        <span>CO2</span>
+        <p>CO2</p>
       </div>
     </section>
   );
