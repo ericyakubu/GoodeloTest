@@ -2,11 +2,11 @@
 
 .Company {
   border: 1px solid #000;
-  width: 336px;
   height: 383px;
   @include border;
   position: relative;
   overflow: hidden;
+  width: 100%;
   max-width: 19.5vw;
 
   @media (max-width: 1080px) {

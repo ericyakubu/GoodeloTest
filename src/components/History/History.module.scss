@@ -1,7 +1,6 @@
 @import "../../styles/mixins.scss";
 
 .History {
-  width: 336px;
   height: 383px;
   background: #000;
   color: #fff;
@@ -10,6 +9,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
   max-width: 19.5vw;
 
   h3 {
